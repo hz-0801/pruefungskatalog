@@ -1,5 +1,5 @@
 # P10 Mathematik Brandenburg – Hefte und Erfassungsstatus
-Stand 05.09.2026 (Hefte 2023, 2024, 2025, 2026 FOR erfasst) · Profil msa · gepflegt vom Katalog-Prompt
+Stand 05.09.2026 (Hefte 2022–2025, 2026 FOR erfasst) · Profil msa · gepflegt vom Katalog-Prompt
 
 ## 1 Quelle
 
@@ -20,7 +20,7 @@ Amtliche Vorgaben und ihre Änderungen stehen gesondert in vorgaben.md.
 | 2019 | 19_P10_Ma_A.pdf | OS | 15 | 135 | 60 | nicht erfasst |
 | 2020 | 20_P10_Ma_A.pdf | OS | 15 | 135 | 60 | nicht erfasst |
 | 2021 | 21_P10_Ma_A.pdf | OS | 15 | 165 | 60 | nicht erfasst · Corona-Ausschlüsse (vorgaben.md) |
-| 2022 | 22_P10_Ma_EBR_FOR.pdf | OS | 13 | 165 | 60 | nicht erfasst · Corona-Ausschlüsse (vorgaben.md) |
+| 2022 | 22_P10_Ma_EBR_FOR.pdf | OS | 13 | 165 | 60 | erfasst 2026-09-05, 30 Zeilen (10 Basis, 20 Kontext) · Corona-Ausschlüsse (vorgaben.md) |
 | 2023 | 23_P10_Ma_A.pdf | OS | 12 | 165 | 60 | erfasst 2026-09-05, 27 Zeilen (9 Basis, 18 Kontext) · Corona-Ausschlüsse (vorgaben.md) |
 | 2024 | 24_P10_Ma_A.pdf | OS | 14 | 135 | 60 | erfasst 2026-09-05 · 29 Zeilen (9 Basis, 20 Kontext) |
 | 2025 | 25_P10_Ma_A.pdf | OS | 15 | 135 | 60 | erfasst 2026-09-05 · 27 Zeilen (9 Basis, 18 Kontext) |
@@ -40,3 +40,4 @@ Papier: OS = integriertes Heft EBR + FOR (Sternchen kennzeichnen FOR-Pflichtaufg
 - 2026-09-05: Heft 2024 erfasst (29 Zeilen, 20 Typen neu).
 - 2026-09-05: Typen-Check nach drei Heften: 85 → 83 Typen, alle „gültig“; vier Etiketten zusammengelegt, eines geteilt (Details konzept.md §7).
 - 2026-09-05: Heft 2023 erfasst (27 Zeilen, 19 Typen neu, 15 wiederverwendet).
+- 2026-09-05: Heft 2022 erfasst (30 Zeilen, 12 Typen neu, 24 wiederverwendet).
