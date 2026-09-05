@@ -1,5 +1,5 @@
 # P10 Mathematik Brandenburg – Hefte und Erfassungsstatus
-Stand 05.09.2026 · Profil msa · gepflegt vom Katalog-Prompt
+Stand 05.09.2026 (Heft 2025 erfasst) · Profil msa · gepflegt vom Katalog-Prompt
 
 ## 1 Quelle
 
@@ -23,7 +23,7 @@ Amtliche Vorgaben und ihre Änderungen stehen gesondert in vorgaben.md.
 | 2022 | 22_P10_Ma_EBR_FOR.pdf | OS | 13 | 165 | 60 | nicht erfasst · Corona-Ausschlüsse (vorgaben.md) |
 | 2023 | 23_P10_Ma_A.pdf | OS | 12 | 165 | 60 | nicht erfasst · Corona-Ausschlüsse (vorgaben.md) |
 | 2024 | 24_P10_Ma_A.pdf | OS | 14 | 135 | 60 | nicht erfasst |
-| 2025 | 25_P10_Ma_A.pdf | OS | 15 | 135 | 60 | nicht erfasst |
+| 2025 | 25_P10_Ma_A.pdf | OS | 15 | 135 | 60 | erfasst 2026-09-05 · 27 Zeilen (9 Basis, 18 Kontext) |
 | 2026 | 26_P10_Ma_EBR_A.pdf | EBR | 10 | 135 | 40 | nicht erfasst |
 | 2026 | 26_P10_Ma_FOR_A.pdf | FOR | 15 | 135 | 60 | nicht erfasst |
 | 2028 | Fachbrief 10, S. 20–31 | MUSTER-EBR / MUSTER-FOR | – | – | – | nicht erfasst · mit Erwartungshorizont, AFB, Standardbezug |
@@ -35,3 +35,4 @@ Papier: OS = integriertes Heft EBR + FOR (Sternchen kennzeichnen FOR-Pflichtaufg
 ## 3 Änderungen an dieser Datei
 
 - 2026-09-05: angelegt; Heftliste 2014–2026. Vorgaben-Historie und Jahrescheck nach vorgaben.md ausgelagert.
+- 2026-09-05: Heft 2025 erfasst (27 Zeilen, 37 Typen neu angelegt).
