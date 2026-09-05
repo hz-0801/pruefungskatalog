@@ -1,5 +1,5 @@
 # PROFIL MSA – Prüfung am Ende der Jahrgangsstufe 10, Mathematik, Brandenburg
-Version 0.2 · 05.09.2026 · Kennung msa · gilt mit Kern v0.2
+Version 0.3 · 05.09.2026 · Kennung msa · gilt mit Kern v0.3
 
 ## 1 Prüfung
 
@@ -75,7 +75,7 @@ Vier Zeilen aus dem Heft 2025, zur Lesbarkeit als Feld = Wert; in den CSV-Dateie
 
     id = 2025-OS-K3b · jahr = 2025 · papier = OS · block = Kontext · aufgabe = 3 · titel = Zahlenscheiben · teilaufgabe = b · seite = 6
     punkte = 3 · stern = nein · hilfsmittel = ja · afb_amtlich =
-    leitidee = Daten und Zufall · thema = Wahrscheinlichkeit mehrstufig · typ = Wahrscheinlichkeit zweistufig · typ_neben = Behauptung prüfen · stichwoerter = Glücksrad|Pfadregel|Laplace|Behauptung · voraussetzungen = Brüche multiplizieren
+    leitidee = Daten und Zufall · thema = Wahrscheinlichkeit mehrstufig · typ = Wahrscheinlichkeit zweistufig unabhängig · typ_neben = Behauptung prüfen · stichwoerter = Glücksrad|Pfadregel|Laplace|Behauptung · voraussetzungen = Brüche multiplizieren
     format = Rechnung|Begründung · operator = Berechnen Sie|Entscheiden Sie|Begründen Sie · antwort = Zahl|Text
     material = Figur · skizze = zwei Kreisscheiben nebeneinander, je vier gleich große Sektoren durch zwei Durchmesser, über jeder ein Pfeil von oben; linke Scheibe im Uhrzeigersinn von oben 1, 2, 1, 3; rechte Scheibe 2, 3, 2, 1 · kontext = Glücksspiel · textumfang = mittel
     gegeben = zwei Scheiben mit je vier gleich großen Sektoren, links 1, 2, 1, 3, rechts 2, 3, 2, 1; beide werden gedreht, gelesen wird erst die linke, dann die rechte Ziffer; Behauptung: P(22) ist gleich P(33) · gesucht = P(33)|Entscheidung zur Behauptung mit Begründung · verfahren = P(3 links) = 1/4, P(3 rechts) = 1/4, Pfadregel multiplizieren; für 22 ist P = 1/4 · 2/4 · schritte = 3 · zahlenraum = Bruch · einheiten = · abhaengig_von =
@@ -86,9 +86,9 @@ Vier Zeilen aus dem Heft 2025, zur Lesbarkeit als Feld = Wert; in den CSV-Dateie
     punkte = 4 · stern = nein · hilfsmittel = ja · afb_amtlich =
     leitidee = Gleichungen und Funktionen · thema = Lineare Funktionen · typ = Gerade durch zwei Punkte zeichnen · typ_neben = Eigenschaften eines Graphen beurteilen|Geradengleichung aus zwei Punkten · stichwoerter = lineare Funktion|Monotonie|y-Achsenabschnitt|Gleichung aufstellen · voraussetzungen = Steigung aus zwei Punkten
     format = Zeichnen|Ankreuzen|Kurzantwort · operator = Zeichnen Sie|Entscheiden Sie|Geben Sie an · antwort = Grafik|Kreuz|Term
-    material = Koordinatensystem · skizze = Koordinatensystem x von −4 bis 4, y von −2 bis 7, Gitter 1, ohne eingezeichnete Punkte? · kontext = ohne · textumfang = mittel
+    material = Koordinatensystem · skizze = Koordinatensystem x von −4 bis 4, y von −2 bis 7, Gitter 1, ohne eingezeichnete Punkte · kontext = ohne · textumfang = mittel
     gegeben = Gerade f durch A(−2|6) und B(3|−1,5); zwei Aussagen zum Ankreuzen: f verläuft monoton steigend; f schneidet die y-Achse in (0|3) · gesucht = Graph von f|wahr/falsch je Aussage|eine Gleichung von f · verfahren = m = (−1,5 − 6)/(3 − (−2)) = −1,5; n aus A: 6 = −1,5 · (−2) + n, n = 3 · schritte = 3 · zahlenraum = negativ|dezimal · einheiten = · abhaengig_von =
     ergebnis = Gerade durch A und B|Aussage 1 falsch, Aussage 2 wahr|f(x) = −1,5x + 3 · zwischenergebnis = m = −1,5
-    niveau_geschaetzt = II · fehlerquelle = Vorzeichen der Steigung · bemerkung = drei Leistungen in einer Einheit; Skizze aus dem Text erschlossen, Seite nicht gerendert
+    niveau_geschaetzt = II · fehlerquelle = Vorzeichen der Steigung · bemerkung = drei Leistungen in einer Einheit
 
-Die vierte Zeile zeigt das „?": Der Wert ist plausibel, aber nicht am Bild geprüft; der Grund steht in bemerkung.
+Ein „?" hinter einem Wert bedeutet: plausibel, aber nicht am Bild geprüft; der Grund steht dann in bemerkung. In diesen Beispielzeilen kommt es nicht vor.

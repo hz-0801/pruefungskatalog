@@ -38,3 +38,4 @@ Papier: OS = integriertes Heft EBR + FOR (Sternchen kennzeichnen FOR-Pflichtaufg
 - 2026-09-05: Heft 2025 erfasst (27 Zeilen, 37 Typen neu angelegt).
 - 2026-09-05: Heft 2026 FOR erfasst (33 Zeilen, 28 Typen neu). EBR-Hefte (2026, Muster 2028) zurückgestellt: derzeit kein EBR-Schüler; MSA = FOR.
 - 2026-09-05: Heft 2024 erfasst (29 Zeilen, 20 Typen neu).
+- 2026-09-05: Typen-Check nach drei Heften: 85 → 83 Typen, alle „gültig“; vier Etiketten zusammengelegt, eines geteilt (Details konzept.md §7).

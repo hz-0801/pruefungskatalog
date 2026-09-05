@@ -38,7 +38,7 @@ Ablage: Repo hz-0801/pruefungskatalog (öffentlich, damit curl ohne Anmeldung li
 9. Häufigkeit ist Auskunft, keine Priorität und kein Filter. Ein einziges Vorkommen ist ein vollwertiger Typ. Der Rahmenlehrplan setzt den Rahmen dessen, was kommen kann; er ist Hintergrund, keine Quelle für Typen.
 10. Katalog vor Blatt: Alle Hefte werden einmal vollständig erfasst; Blätter entstehen nur aus dem Katalog. Die Hefte selbst holt der Blatt-Prompt nur für Wortlaut oder Bild einer Ankeraufgabe.
 11. Der Katalog erfasst Fakten, nicht Nutzung: Zeile = kleinste Einheit mit eigener Punktangabe; Fakten getrennt von Deutung; Nachbau-Test als Erfolgskriterium; kein Volltext, sondern Verweis plus Strukturbeschreibung. Spätere Wünsche sind Umsortieren, im Ausnahmefall ein Nachtragslauf für ein Feld, nie ein Neustart.
-12. Kern und Profil getrennt. Erstes und derzeit einziges Profil: msa (P10 Brandenburg). Weitere Profile (Abitur, andere Länder) erst bei Bedarf; Vokabular und Häufigkeit gelten nie über Profile hinweg.
+12. Kern und Profil getrennt. Erstes Profil: msa (P10 Brandenburg, Niveau FOR). Zweites Profil abi (Abitur Brandenburg) folgt nach den MSA-Heften in eigenem Chat; Dateinamen mit Präfix abi-. Weitere Profile erst bei Bedarf; Vokabular und Häufigkeit gelten nie über Profile hinweg.
 13. Vokabular in drei Ebenen: Leitidee und Thema fest im Profil (aus Rahmenlehrplan, Fachbrief-Inhaltsliste, Lehrwerkgliederung), Typ wächst aus den Heften in typen.csv, Abgleichlauf nach dem letzten Heft. Der Lehrer sieht die fertige Typenliste einmal durch; das ist optional.
 14. Zwei Katalogdateien, Basis und Kontext, gleiches Schema; eine Typenliste.
 15. Dateiform CSV mit Semikolon; Durchsicht über eine Prüftabelle im Chat, nicht in der Datei.
@@ -66,19 +66,21 @@ Ablage: Repo hz-0801/pruefungskatalog (öffentlich, damit curl ohne Anmeldung li
 
 - Ablageort bestätigen (Basis-URL im Profil).
 - Prüfungsjahr des Schülers: Annahme 2027 (aktuelles Format). Bei 2028 rücken hilfsmittelfreier Teil und Musteraufgaben nach vorn.
-- Themenliste des Profils im Probelauf prüfen.
 - Blatt-Prompt: noch nicht begonnen; Entwurf nach dem Probelauf, damit er gegen echte Katalogzeilen geschrieben wird.
 - PDF-Archiv anlegen.
+- Profil abi: Schülerart am Oberstufenzentrum klären (berufliches Gymnasium oder Fachoberschule), Quellen und Erwartungshorizonte prüfen.
 
 ## 6 Ablauf
 
 1. Entwurf: abgeschlossen (Kern, Profil, Dateien, Vorgaben). Ablage flach im Repo pruefungskatalog.
-2. Probelauf: Hefte 2025, 2026 FOR, 2024 erfassen, je eines pro Antwort, Prüftabelle je Heft.
-3. Typenliste nach drei Heften festziehen; Blatt-Prompt v0.1; zwei, drei Testblätter aus dem Katalog. Fehlt ein Feld, wird es jetzt ergänzt.
-4. Restliche Hefte und Musteraufgaben 2028 erfassen; Abgleichlauf; Typenbibliothek ableiten.
+2. Probelauf: abgeschlossen (2025, 2026 FOR, 2024; 89 Zeilen). EBR-Hefte zurückgestellt: kein EBR-Schüler, Aufgaben weitgehend Dubletten der FOR-Hefte.
+3. Typenliste nach drei Heften festgezogen (Typen-Check 05.09.2026, 83 Typen gültig); Blatt-Prompt v0.1; zwei, drei Testblätter aus dem Katalog. Fehlt ein Feld, wird es jetzt ergänzt.
+4. Restliche MSA-Hefte 2023 bis 2014 und Muster 2028 FOR erfassen, Umzug nach je zwei bis drei Heften; Abgleichlauf; Typenbibliothek ableiten.
+4a. Profil abi in eigenem Chat.
 5. Blatt-Prompt fertigstellen.
 Jährlich: Vorgabencheck (vorgaben.md), neues Heft erfassen, Typenbibliothek neu ableiten.
 
 ## 7 Änderungen
 
 - 2026-09-05: angelegt.
+- 2026-09-05: Probelauf abgeschlossen. EBR zurückgestellt, Profil abi vorgemerkt (Entscheidung 12 ergänzt). Typen-Check: drei Bruchteil-Typen zusammengelegt, Flächen-/Umfangsterm → „Term zu Figur zuordnen“, „Wahrscheinlichkeit zweistufig“ in unabhängig/ohne Zurücklegen getrennt, Mittelpunktswinkel als Baustein vermerkt; alle Typen auf „gültig“. Kern §1: Dateinamen nach Profil.

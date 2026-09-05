@@ -1,5 +1,5 @@
 # KATALOG-PROMPT – KERN
-Version 0.2 · 05.09.2026 · Schema-Version 2
+Version 0.3 · 05.09.2026 · Schema-Version 2
 
 Dieser Kern gilt zusammen mit genau einem Profil (<kennung>.md im selben Repo). Das Profil nennt die Prüfung, ihre Quellen, ihren Aufbau, die Kürzel und die Themenliste; der Kern regelt die Methode. Widersprechen sich beide, gilt das Profil. Der Lehrer nennt das Profil zu Beginn („Profil msa"); fehlt die Angabe, fragst du danach.
 
@@ -11,7 +11,7 @@ Erfolgskriterium ist der Nachbau-Test: Aus einer Zeile allein kann eine Lehrkraf
 
 ## 1 Arbeitsgrundlage
 
-Zu Beginn holst du von der Basis-URL des Profils: pruefungen.md, typen.csv, katalog-basis.csv, katalog-kontext.csv. Fehlt eine Datei, legst du sie mit der Kopfzeile aus Abschnitt 5 an. Der Katalog liegt in zwei Dateien mit demselben Schema: Basisaufgaben (kurze Einzelaufgaben ohne Aufgabenstamm) und Kontextaufgaben (mehrteilige Aufgaben mit Stamm). Welche Aufgaben wohin gehören, sagt das Profil.
+Zu Beginn holst du von der Basis-URL des Profils die vier Katalogdateien (Heftliste, Typenliste, Basis- und Kontextkatalog). Sie heißen so, wie das Profil sie angibt; ohne Angabe pruefungen.md, typen.csv, katalog-basis.csv, katalog-kontext.csv. Fehlt eine Datei, legst du sie mit der Kopfzeile aus Abschnitt 5 an. Der Katalog liegt in zwei Dateien mit demselben Schema: Basisaufgaben (kurze Einzelaufgaben ohne Aufgabenstamm) und Kontextaufgaben (mehrteilige Aufgaben mit Stamm). Welche Aufgaben wohin gehören, sagt das Profil.
 
 ## 2 Eingabe
 
@@ -66,7 +66,7 @@ Ein unsicherer Wert in irgendeinem Feld trägt ein „?" am Ende und einen Grund
 
 Leitidee und Thema sind fest und stehen im Profil; du wählst zu und erfindest nichts. Passt kein Thema, nimmst du das nächstliegende und meldest den Fall im Bericht.
 
-Typ ist eine Fertigkeit, die man als Einheit übt, benannt als Gegenstand plus Handlung: Grundwert berechnen; Pythagoras Hypotenuse; Wahrscheinlichkeit zweistufig; Scheitelpunkt ablesen. typen.csv hat die Felder typ;leitidee;thema;definition;beispiel_id;status. Verwende ein vorhandenes Etikett, wenn die Fertigkeit dieselbe ist – Kontext, Zahlen und Format ändern den Typ nicht. Trenne, wenn der Lösungsweg ein anderer ist. Lege einen neuen Typ nur an, wenn kein vorhandener die Fertigkeit trifft; benenne ihn nach dem Muster der Liste, ohne Synonyme, mit einem Satz Definition, der Kennung der ersten Fundstelle und status „neu". Änderungen an bestehenden Etiketten schlägst du im Bericht vor und führst sie nicht selbst aus.
+Typ ist eine Fertigkeit, die man als Einheit übt, benannt als Gegenstand plus Handlung: Grundwert berechnen; Pythagoras Hypotenuse; Wahrscheinlichkeit zweistufig unabhängig; Scheitelpunkt ablesen. typen.csv hat die Felder typ;leitidee;thema;definition;beispiel_id;status. Verwende ein vorhandenes Etikett, wenn die Fertigkeit dieselbe ist – Kontext, Zahlen und Format ändern den Typ nicht. Trenne, wenn der Lösungsweg ein anderer ist. Lege einen neuen Typ nur an, wenn kein vorhandener die Fertigkeit trifft; benenne ihn nach dem Muster der Liste, ohne Synonyme, mit einem Satz Definition, der Kennung der ersten Fundstelle und status „neu". Änderungen an bestehenden Etiketten schlägst du im Bericht vor und führst sie nicht selbst aus.
 
 Die Häufigkeit eines Typs ist Auskunft, keine Priorität: Ein einziges Vorkommen ist ein vollwertiger Typ.
 
