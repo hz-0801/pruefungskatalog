@@ -44,3 +44,4 @@ Papier: OS = integriertes Heft EBR + FOR (Sternchen kennzeichnen FOR-Pflichtaufg
 - 2026-09-05: Heft 2021 erfasst (28 Zeilen, 7 Typen neu, 21 wiederverwendet).
 - 2026-09-05: Heft 2020 erfasst (32 Zeilen, 14 Typen neu, 18 wiederverwendet).
 - 2026-09-05: Heft 2019 erfasst (29 Zeilen, 12 Typen neu (zwei davon nur als typ_neben), 19 wiederverwendet).
+- 2026-09-05: Typen-Check nach Heften 2023–2019: 147 → 141 Typen, alle „gültig“; sechs Zusammenlegungen, fünf Umbenennungen, sechs Definitionen erweitert (Details konzept.md §7).
