@@ -9,19 +9,21 @@ Erfolgskriterium eines Blatts: Der Schüler löst danach Aufgaben dieses Typs au
 
 ## 2 Bausteine
 
-    katalog-prompt.md          Kern: Methode der Erfassung, prüfungsunabhängig
-    profile/p10-bb.md          Profil: alles, was an der P10 hängt (Quellen, Aufbau, Kürzel, Themenliste, Beispielzeilen)
-    blatt-prompt.md            Blatt-Prompt (noch zu schreiben)
-    konzept.md                 diese Datei
-    p10-bb/pruefungen.md       Heftliste mit Erfassungsstatus
-    p10-bb/vorgaben.md         amtliche Vorgaben aus den Fachbriefen, Jahrescheck; gesonderter Baustein
-    p10-bb/typen.csv           Typvokabular, wächst beim Erfassen
-    p10-bb/katalog-basis.csv   Zeilen der Basisaufgaben
-    p10-bb/katalog-kontext.csv Zeilen der Kontextaufgaben
-    p10-bb/typenbibliothek.md  abgeleitet aus dem Katalog, wird erzeugt, nie editiert (noch nicht vorhanden)
-    p10-bb/pdf/                Archiv der Hefte (noch nicht angelegt)
+    konzept.md             diese Datei
+    katalog-prompt.md      Kern: Methode der Erfassung, prüfungsunabhängig
+    msa.md                 Profil msa: alles, was an der P10 hängt (Quellen, Aufbau, Kürzel, Themenliste, Beispielzeilen)
+    blatt-prompt.md        Blatt-Prompt (noch zu schreiben)
+    pruefungen.md          Heftliste mit Erfassungsstatus
+    vorgaben.md            amtliche Vorgaben aus den Fachbriefen, Jahrescheck; gesonderter Baustein
+    typen.csv              Typvokabular, wächst beim Erfassen
+    katalog-basis.csv      Zeilen der Basisaufgaben
+    katalog-kontext.csv    Zeilen der Kontextaufgaben
+    typenbibliothek.md     abgeleitet aus dem Katalog, wird erzeugt, nie editiert (noch nicht vorhanden)
+    pdf/                   Archiv der Hefte (noch nicht angelegt)
 
-Ablage: eigenes Repo hz-0801/pruefungskatalog (öffentlich, damit curl ohne Anmeldung liest; die Basis-URL steht im Profil und ist die einzige Stelle, die bei anderer Ablage geändert wird). Claude liest per curl, der Lehrer lädt geänderte Dateien hoch. Geschrieben wird nur beim Aufbau und einmal im Jahr.
+Alle Dateien liegen flach im Wurzelverzeichnis des Repos; das hält das Hochladen über die GitHub-Oberfläche einfach. Kommt ein zweites Profil, wird die Ordnung dann entschieden (eigenes Repo oder Präfixe).
+
+Ablage: Repo hz-0801/pruefungskatalog (öffentlich, damit curl ohne Anmeldung liest; die Basis-URL steht im Profil und ist die einzige Stelle, die bei anderer Ablage geändert wird). Claude liest per curl, der Lehrer lädt geänderte Dateien hoch. Geschrieben wird nur beim Aufbau und einmal im Jahr.
 
 ## 3 Entscheidungen
 
@@ -36,7 +38,7 @@ Ablage: eigenes Repo hz-0801/pruefungskatalog (öffentlich, damit curl ohne Anme
 9. Häufigkeit ist Auskunft, keine Priorität und kein Filter. Ein einziges Vorkommen ist ein vollwertiger Typ. Der Rahmenlehrplan setzt den Rahmen dessen, was kommen kann; er ist Hintergrund, keine Quelle für Typen.
 10. Katalog vor Blatt: Alle Hefte werden einmal vollständig erfasst; Blätter entstehen nur aus dem Katalog. Die Hefte selbst holt der Blatt-Prompt nur für Wortlaut oder Bild einer Ankeraufgabe.
 11. Der Katalog erfasst Fakten, nicht Nutzung: Zeile = kleinste Einheit mit eigener Punktangabe; Fakten getrennt von Deutung; Nachbau-Test als Erfolgskriterium; kein Volltext, sondern Verweis plus Strukturbeschreibung. Spätere Wünsche sind Umsortieren, im Ausnahmefall ein Nachtragslauf für ein Feld, nie ein Neustart.
-12. Kern und Profil getrennt. Erstes und derzeit einziges Profil: P10-BB. Weitere Profile (Abitur, andere Länder) erst bei Bedarf; Vokabular und Häufigkeit gelten nie über Profile hinweg.
+12. Kern und Profil getrennt. Erstes und derzeit einziges Profil: msa (P10 Brandenburg). Weitere Profile (Abitur, andere Länder) erst bei Bedarf; Vokabular und Häufigkeit gelten nie über Profile hinweg.
 13. Vokabular in drei Ebenen: Leitidee und Thema fest im Profil (aus Rahmenlehrplan, Fachbrief-Inhaltsliste, Lehrwerkgliederung), Typ wächst aus den Heften in typen.csv, Abgleichlauf nach dem letzten Heft. Der Lehrer sieht die fertige Typenliste einmal durch; das ist optional.
 14. Zwei Katalogdateien, Basis und Kontext, gleiches Schema; eine Typenliste.
 15. Dateiform CSV mit Semikolon; Durchsicht über eine Prüftabelle im Chat, nicht in der Datei.
@@ -70,7 +72,7 @@ Ablage: eigenes Repo hz-0801/pruefungskatalog (öffentlich, damit curl ohne Anme
 
 ## 6 Ablauf
 
-1. Entwurf: abgeschlossen (Kern, Profil, Dateien, Vorgaben).
+1. Entwurf: abgeschlossen (Kern, Profil, Dateien, Vorgaben). Ablage flach im Repo pruefungskatalog.
 2. Probelauf: Hefte 2025, 2026 FOR, 2024 erfassen, je eines pro Antwort, Prüftabelle je Heft.
 3. Typenliste nach drei Heften festziehen; Blatt-Prompt v0.1; zwei, drei Testblätter aus dem Katalog. Fehlt ein Feld, wird es jetzt ergänzt.
 4. Restliche Hefte und Musteraufgaben 2028 erfassen; Abgleichlauf; Typenbibliothek ableiten.

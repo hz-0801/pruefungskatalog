@@ -1,5 +1,5 @@
 # P10 Mathematik Brandenburg – Amtliche Vorgaben und ihre Änderungen
-Stand 05.09.2026 · Profil p10-bb · gesonderter Baustein, unabhängig vom Katalog
+Stand 05.09.2026 · Profil msa · gesonderter Baustein, unabhängig vom Katalog
 
 Zweck: festhalten, was die Behörde zur Prüfung vorgibt und wann sich etwas geändert hat, damit der Katalog richtig gelesen wird und Formatwechsel nicht unbemerkt bleiben. Diese Datei ist kein Teil der Erfassung; der Katalog-Prompt liest sie nicht.
 

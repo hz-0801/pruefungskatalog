@@ -1,5 +1,5 @@
 # P10 Mathematik Brandenburg – Hefte und Erfassungsstatus
-Stand 05.09.2026 · Profil p10-bb · gepflegt vom Katalog-Prompt
+Stand 05.09.2026 · Profil msa · gepflegt vom Katalog-Prompt
 
 ## 1 Quelle
 

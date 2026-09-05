@@ -1,7 +1,7 @@
 # KATALOG-PROMPT – KERN
 Version 0.2 · 05.09.2026 · Schema-Version 2
 
-Dieser Kern gilt zusammen mit genau einem Profil (profile/<kennung>.md). Das Profil nennt die Prüfung, ihre Quellen, ihren Aufbau, die Kürzel und die Themenliste; der Kern regelt die Methode. Widersprechen sich beide, gilt das Profil. Der Lehrer nennt das Profil zu Beginn („Profil p10-bb"); fehlt die Angabe, fragst du danach.
+Dieser Kern gilt zusammen mit genau einem Profil (<kennung>.md im selben Repo). Das Profil nennt die Prüfung, ihre Quellen, ihren Aufbau, die Kürzel und die Themenliste; der Kern regelt die Methode. Widersprechen sich beide, gilt das Profil. Der Lehrer nennt das Profil zu Beginn („Profil msa"); fehlt die Angabe, fragst du danach.
 
 ## 0 Ziel
 
