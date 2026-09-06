@@ -1,6 +1,6 @@
 # Blatt-Konzept – Nachhilfehefte aus dem Prüfungskatalog
 
-Stand 2026-09-06, v0.4. Ergänzt `konzept.md` (Katalog). Für die Heft-Phase gilt bei Widerspruch diese Datei. Baumaschine ist der MSA-Prompt (§5), der nur als Projektanweisung im Aufgaben-Projekt liegt, nicht im Repo: Abschnitte 0–2 eigen, Abschnitte 3–6 aus dem Masterprompt v3.27 übernommen. Diese Datei regelt, was sich durch den Katalog als Quelle ändert; die Bauregeln selbst stehen im Prompt.
+Stand 2026-09-06, v0.5. Ergänzt `konzept.md` (Katalog). Für die Heft-Phase gilt bei Widerspruch diese Datei. Baumaschine ist der MSA-Prompt (§5), der nur als Projektanweisung im Aufgaben-Projekt liegt, nicht im Repo: Abschnitte 0–2 eigen, Abschnitte 3–6 aus dem Masterprompt v3.27 übernommen. Diese Datei regelt, was sich durch den Katalog als Quelle ändert; die Bauregeln selbst stehen im Prompt.
 
 ## 1 Ziel
 
@@ -40,7 +40,7 @@ Rückwärts von der Decke: Welche Merkmale muss ein Schüler beherrschen, um das
 Eigener MSA-Prompt, kein Profil am Masterprompt. Entscheidung nach Stufe 2, Begründung:
 - Abschnitte 0–2 des Masterprompts (Rolle, Blatttypen, Eingabe deuten, Typenliste, Budget und Schnitt in Teile, Teil 0/1, Eingangscheck, Lernblatt kurz) beschreiben einen anderen Mechanismus: Thema → geratene Typenliste → geschnittene Teile. Das MSA-Heft geht von Katalog → Typen → ungeschnittenes Heft aus. Ein Profil müsste den größten Teil dieser Abschnitte überschreiben; was übrig bliebe (Leitziel, Rangfolge, Konventionen, Anspruchslage, Personalisierung, Progression 2.2 a–d, Fokus 2.3, Testformat 2.4), wird übernommen.
 - Masterprompt 1.4 ist für Kl. 10 sachlich veraltet („P10 für alle drei Schulformen"; seit 2025/26 keine P10 am Gymnasium, seit 2026 getrennte EBR/FOR-Hefte). Im MSA-Prompt ist der Stoffstand fest: Kl. 10, FOR. Befund für die nächste Masterprompt-Fassung.
-- Abschnitte 3–6 werden wortgleich übernommen mit gezielten Abweichungen: 3.1 kein Übersichtskasten (siehe Festlegungen), 3.4 Lösungen, 4.1 Reihenfolge ohne Kasten, 4.2 Hilfe-Seite mit Verweis auf die Formelsammlung, 4.6 Dateikürzel (`Heft`, `Basis`, `Vorb`, `Fokus_[Typ]`, `Pruefung`), 6.3 ohne Orientierungszeile (kein Schnitt), protokoll.txt mit Kapitelstruktur statt Schnitt.
+- Abschnitte 3–6 werden wortgleich übernommen mit gezielten Abweichungen: 3.1 kein Übersichtskasten (siehe Festlegungen), 3.4 Lösungen, 4.1 Reihenfolge ohne Kasten, 4.2 Hilfe-Seite mit Verweis auf die Formelsammlung, 4.6 Dateinamen mit Typkürzel (`Heft`, `Basis`, `Vorb`, `Fokus_[Typ]`, `Pruefung`) und Rolle (`Schueler`, `Loesungen`, `Start`), Datum nur im Archiv, 6.3 ohne Orientierungszeile (kein Schnitt), protokoll.txt mit Kapitelstruktur statt Schnitt.
 
 Regel gegen Auseinanderlaufen: Änderungen an 3–6 werden zuerst im Masterprompt gemacht und dann in den MSA-Prompt übertragen; der Kopf des MSA-Prompts nennt die Masterprompt-Version, aus der 3–6 stammen. Die Testauswertung gilt für beide Prompts.
 
@@ -55,7 +55,8 @@ Verworfen: gemeinsamer Kern 3–6 als eigene Datei für beide Prompts – sauber
 - Lösungen (überschreibt konzept.md „vorerst nur Ergebnisse"): Basis → Ergebnis; Kontext → Ergebnis mit Zwischenergebnissen; Original → knapper Lösungsweg mit Stichwort je Schritt, kein Text. Ergebnisse prüft das Skript; Lösungswege sind ungeprüft, daher knapp.
 - Heftlänge ergibt sich aus Typen und Merkmalen, kein Zielumfang. Einfaches Thema → kurzes Heft. Schülerbezug („kurz", „schwach") per Freitext wie im Masterprompt.
 - Keine Quelle im Heft, auch nicht im Begleitteil; Herkunft und Häufigkeit nur im Protokoll (überschreibt konzept.md Nr. 5).
-- Kopfzeile Thema · Heft oben (`\blattkopf`), Seite und Sternlegende unten. Zwei PDFs je Heft: Schülerheft (Aufgaben + Hilfe) und Lösungen.
+- Kopfzeile Thema · Heft oben (`\blattkopf`), Seite und Sternlegende unten. Übergeben werden je Heft genau `…_Schueler.pdf` (Aufgaben + Hilfe), `…_Loesungen.pdf`, auf „start" davor `…_Start.pdf`, und das Protokoll-Archiv; das ungeteilte Kompilat nur im Archiv.
+- Aufgabenteil mit weiteren Zeilen (`\weit`, Vorlage ab 2026-09-06c); Begleitteil und Hilfe eng. Stern = Niveaumarke, nicht Positionsmarke: jede verfremdete Katalogzeile trägt ihn, auch mitten in der Kette. Legende „⋆ = Prüfungsaufgabe", nie „darf übersprungen werden"; den Text liefert der Prompt als Argument von `\blattkopf*` (Vorlage ab 2026-09-06d), die Vorlage enthält keinen Legendentext.
 - Vorablauf nur auf „start": Aufgabe 1–2 zuerst als eigenes PDF, dann das ganze Heft.
 - Probeprüfung wortgleich wird nicht gebaut; das Original liegt auf dem Bildungsserver. Ein Jahr in der Eingabe heißt Probeprüfung wie dieses Jahr.
 - Kopf-/Fußzeile bleibt: Dateiname, Protokoll und Testauswertung hängen daran. Kein Clean sheet ohne Kopfzeile.
@@ -68,7 +69,6 @@ Verworfen: gemeinsamer Kern 3–6 als eigene Datei für beide Prompts – sauber
 ## 7 Offen
 
 - Bauzeit: Prozentrechnung (10 Hauptnummern) 504 s und 479 s, Probeprüfung 2025 (7 Aufgaben, 13 Grafiken) 258 s – fast alles Schreibzeit. Ein großes Thema (Lineare Funktionen, 14 Typen) steht als Messung noch aus; Abschnittsbau bisher nicht nötig.
-- Seite 1 des Themenhefts ist dicht (drei Hauptnummern, ~30 Teilaufgaben, kein Weißraum). Regelkonform; falls es stört, ist die Stellschraube der Zeilenabstand in der Vorlage.
 - Vorlage: Dreieck-Makro setzt den Winkel nur an der oberen Ecke (Probeprüfung 1 g musste cos statt sin nehmen); rechte Winkel in Skizzen nicht markierbar.
 - niveau_geschaetzt ist eine Erfassungsschätzung; ob „prüfung schwer" trifft, zeigt der erste Bau.
 - Nachbartypen (Anregung „MSA-Arbeitsheft": 2–3 schulübliche Typen je Kapitel, die nicht im Katalog stehen): Empfehlung verwerfen – der Katalog ist der Maßstab, Klassenarbeiten sind Sache des Masterprompts. Vom Lehrer nicht entschieden.
@@ -93,4 +93,5 @@ Verworfen: gemeinsamer Kern 3–6 als eigene Datei für beide Prompts – sauber
 - 2026-09-05 v0.1: angelegt nach Chat „Blatt-Konzept" (Heftsorten, Rolle des Katalogs, Baurichtung, Festlegungen zu Umfang, Fehler-finden, Lösungen).
 - 2026-09-06 v0.2: Architektur entschieden (eigener MSA-Prompt, §5). Hauptnummer = Katalog-Typ (§3). Festlegungen ergänzt: Spezdatei, Serienmodell, Verfremdung, Fußzeile, Hilfsmittel, Prüfungslage 2026. Offen bereinigt: Bauweise aufgelöst, Testblatt = Prozent; neu Bauzeitgrenze, Kasten 3.1, Nachbartypen, Heft A. Nach Chat „Stufe 2 Prozentrechnung".
 - 2026-09-06 v0.3: nach Durchsprache des Prompts. Originale als Sprossen nach Niveau; ein Lauf ohne Budget; Spezdatei und Serienmodell gestrichen (Katalog hält die Struktur); Check bleibt, voraussetzungen nur Hinweis; Basisheft ohne Hinführung; Test → Probeprüfung mit Freitext-Auswahl; kein Übersichtskasten; Basis-URL auch im Prompt. Stufen 3–6 neu.
-- 2026-09-06 v0.4: nach Auswertung Themenheft 2 und Probeprüfung 2025. Herkunft nur im Protokoll; Kopfzeile, zwei PDFs, Vorablauf auf Zuruf; Originale gleicher Merkmale eine Sprosse; Probeprüfung nie wortgleich; Prompt nur als Projektanweisung. Vorlage 2026-09-06b (blattkopf, kreissektor, leerfeld, drei Reparaturen).
+- 2026-09-06 v0.4: nach Auswertung Themenheft 2 und Probeprüfung 2025. Herkunft nur im Protokoll; Kopfzeile, zwei PDFs, Vorablauf auf Zuruf; Originale gleicher Merkmale eine Sprosse; Probeprüfung nie wortgleich; Prompt nur als Projektanweisung. Vorlage 2026-09-06c (blattkopf, weit, kreissektor, leerfeld, drei Reparaturen).
+- 2026-09-06 v0.5: nach Auswertung Themenheft Prozent 3 („start") und Lineare Funktionen 1. Stern = Prüfungsaufgabe (Niveaumarke); Hilfe-Seite ohne Ergebnisse des Hefts; Dateirollen, Datum nur im Archiv; Skriptausgabe mit Sollwerten; 4.3/5.1 c ohne Widerspruch (Achsenbereich statt Grafik), Seitenfüllung als Maß. Vorlage 2026-09-06d (Legende als Argument). Befund: 2026-09-06c war nicht im Repo, beide Läufe bauten gegen b.
