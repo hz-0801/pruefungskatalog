@@ -1,6 +1,6 @@
 # Blatt-Konzept – Nachhilfehefte aus dem Prüfungskatalog
 
-Stand 2026-09-06, v0.3. Ergänzt `konzept.md` (Katalog). Für die Heft-Phase gilt bei Widerspruch diese Datei. Baumaschine ist der MSA-Prompt (§5): Abschnitte 0–2 eigen, Abschnitte 3–6 aus dem Masterprompt v3.27 übernommen. Diese Datei regelt, was sich durch den Katalog als Quelle ändert; die Bauregeln selbst stehen im Prompt.
+Stand 2026-09-06, v0.4. Ergänzt `konzept.md` (Katalog). Für die Heft-Phase gilt bei Widerspruch diese Datei. Baumaschine ist der MSA-Prompt (§5), der nur als Projektanweisung im Aufgaben-Projekt liegt, nicht im Repo: Abschnitte 0–2 eigen, Abschnitte 3–6 aus dem Masterprompt v3.27 übernommen. Diese Datei regelt, was sich durch den Katalog als Quelle ändert; die Bauregeln selbst stehen im Prompt.
 
 ## 1 Ziel
 
@@ -25,7 +25,7 @@ Der Katalog liefert Rahmen, nicht Inhalt:
 - Typenliste je Thema aus `typen.csv` – ersetzt das Erraten der Typen (Masterprompt 2.1). Jede Hauptnummer ist ein Katalog-Typ, die Kette läuft innerhalb des Typs von leicht bis Decke. Das überschreibt Masterprompt 2.1 („Formel und Umkehrung = ein Typ"): Der Katalog führt Prozentwert, Grundwert und Prozentsatz als drei Typen mit je eigener Decke.
 - Häufigkeit je Typ ist Auskunft für den Begleitteil, keine Gewichtung und kein Filter (konzept.md Nr. 9).
 - Distraktoren und Fehler-finden-Aufgaben speisen sich aus dem Katalogfeld `fehlerquelle`.
-- Alle Originale eines Typs werden Sprossen seiner Kette, nach Niveau geordnet, nicht nach Jahr; Decke ist das Original mit den meisten Merkmalen (bei Gleichstand Punkte, dann jüngeres Jahr) – ersetzt das geschätzte „Prüfungsniveau" (Masterprompt 2.2 c).
+- Alle Originale eines Typs werden Sprossen seiner Kette, nach Niveau geordnet, nicht nach Jahr; Originale gleicher Merkmale sind eine Sprosse (Vorbild das jüngere); Decke ist das Original mit den meisten Merkmalen (bei Gleichstand Punkte, dann jüngeres Jahr) – ersetzt das geschätzte „Prüfungsniveau" (Masterprompt 2.2 c).
 - Ankeraufgabe: Original mit neuen Werten (verfremdet).
 - Prüfungsform als Muster für erfundene Aufgaben: Operatoren, Antwortform, Punktegewicht, echte Kontexte.
 
@@ -54,8 +54,11 @@ Verworfen: gemeinsamer Kern 3–6 als eigene Datei für beide Prompts – sauber
 - Begründen bleibt Pflichtelement (Prüfungstyp „Behauptung prüfen"). Fehler-finden nur auf Zuruf, nicht Pflicht. Darstellungswechsel und tragender Kontext bleiben, soweit die Typen es tragen.
 - Lösungen (überschreibt konzept.md „vorerst nur Ergebnisse"): Basis → Ergebnis; Kontext → Ergebnis mit Zwischenergebnissen; Original → knapper Lösungsweg mit Stichwort je Schritt, kein Text. Ergebnisse prüft das Skript; Lösungswege sind ungeprüft, daher knapp.
 - Heftlänge ergibt sich aus Typen und Merkmalen, kein Zielumfang. Einfaches Thema → kurzes Heft. Schülerbezug („kurz", „schwach") per Freitext wie im Masterprompt.
-- Keine Quelle auf dem Schülerblatt, Herkunft im Begleitteil (konzept.md).
-- Fußzeile (Masterprompt 4.1) bleibt: Dateiname, Protokoll und Testauswertung hängen daran. Kein Clean sheet ohne Fußzeile.
+- Keine Quelle im Heft, auch nicht im Begleitteil; Herkunft und Häufigkeit nur im Protokoll (überschreibt konzept.md Nr. 5).
+- Kopfzeile Thema · Heft oben (`\blattkopf`), Seite und Sternlegende unten. Zwei PDFs je Heft: Schülerheft (Aufgaben + Hilfe) und Lösungen.
+- Vorablauf nur auf „start": Aufgabe 1–2 zuerst als eigenes PDF, dann das ganze Heft.
+- Probeprüfung wortgleich wird nicht gebaut; das Original liegt auf dem Bildungsserver. Ein Jahr in der Eingabe heißt Probeprüfung wie dieses Jahr.
+- Kopf-/Fußzeile bleibt: Dateiname, Protokoll und Testauswertung hängen daran. Kein Clean sheet ohne Kopfzeile.
 - Kein Übersichtskasten in keinem Heft: Die Prüfung erlaubt die Formelsammlung, der Schüler übt mit ihr. Formeln werden nirgends abgedruckt; Hilfe-Seite und Wissensblock verweisen auf die Formelsammlung.
 - Kein eigener Test: Die Generalprobe ist die Originalprüfung (konzept.md Nr. 8). Die Probeprüfung ist ihre verfremdete Fassung mit freier Zeilenauswahl, nie über dem Niveau der Originale.
 - Katalogfeld voraussetzungen ist Hinweis, keine Liste: Es enthält aufgabenbezogene Hinweise und Schritte des Themas selbst. Die Fertigkeiten für Check und Vorbereitung leitet der Prompt aus den Rechenschritten ab, eine Stufe zurück.
@@ -64,7 +67,9 @@ Verworfen: gemeinsamer Kern 3–6 als eigene Datei für beide Prompts – sauber
 
 ## 7 Offen
 
-- Bauzeitgrenze je Lauf: Das Masterprompt-Budget (6 Hauptnummern, 2 Grafiken, 4 Seiten) ist eine Bauzeitgrenze, kein Heftmaß. Prozentrechnung (10 Typen) prüft das Prinzip; die Grenze misst der zweite Bau an einem großen Thema (Lineare Funktionen, 14 Typen, Grafiken). Erst danach entscheiden, ob Abschnittsbau in den Prompt muss.
+- Bauzeit: Prozentrechnung (10 Hauptnummern) 504 s und 479 s, Probeprüfung 2025 (7 Aufgaben, 13 Grafiken) 258 s – fast alles Schreibzeit. Ein großes Thema (Lineare Funktionen, 14 Typen) steht als Messung noch aus; Abschnittsbau bisher nicht nötig.
+- Seite 1 des Themenhefts ist dicht (drei Hauptnummern, ~30 Teilaufgaben, kein Weißraum). Regelkonform; falls es stört, ist die Stellschraube der Zeilenabstand in der Vorlage.
+- Vorlage: Dreieck-Makro setzt den Winkel nur an der oberen Ecke (Probeprüfung 1 g musste cos statt sin nehmen); rechte Winkel in Skizzen nicht markierbar.
 - niveau_geschaetzt ist eine Erfassungsschätzung; ob „prüfung schwer" trifft, zeigt der erste Bau.
 - Nachbartypen (Anregung „MSA-Arbeitsheft": 2–3 schulübliche Typen je Kapitel, die nicht im Katalog stehen): Empfehlung verwerfen – der Katalog ist der Maßstab, Klassenarbeiten sind Sache des Masterprompts. Vom Lehrer nicht entschieden.
 - Basisheft: Umfang (Annahme im Prompt 20–30 Teilaufgaben in Zehnerblöcken) am ersten Bau prüfen.
@@ -78,12 +83,14 @@ Verworfen: gemeinsamer Kern 3–6 als eigene Datei für beide Prompts – sauber
 1. Baurichtung am echten Typ von Hand durchspielen – abgeschlossen (Prozentrechnung, Übergabe 06.09.2026).
 2. Architektur festlegen – abgeschlossen (§5).
 3. MSA-Prompt v0.1 – abgeschlossen (blatt-prompt.md, 06.09.2026).
-4. Themenheft Prozentrechnung über die Pipeline bauen (Aufgaben-Projekt); Testauswertung.
-5. Themenheft Lineare Funktionen: Bauzeit und Skizzen-Probe.
-6. Basisheft und Probeprüfung je einmal bauen.
+4. Themenheft Prozentrechnung – zweimal gebaut und ausgewertet (06.09.2026), Prompt v0.4.
+5. Probeprüfung 2025 – gebaut und ausgewertet (06.09.2026).
+6. Themenheft Lineare Funktionen: Bauzeit und Skizzen-Probe.
+7. Basisheft einmal bauen.
 
 ## 9 Änderungslog
 
 - 2026-09-05 v0.1: angelegt nach Chat „Blatt-Konzept" (Heftsorten, Rolle des Katalogs, Baurichtung, Festlegungen zu Umfang, Fehler-finden, Lösungen).
 - 2026-09-06 v0.2: Architektur entschieden (eigener MSA-Prompt, §5). Hauptnummer = Katalog-Typ (§3). Festlegungen ergänzt: Spezdatei, Serienmodell, Verfremdung, Fußzeile, Hilfsmittel, Prüfungslage 2026. Offen bereinigt: Bauweise aufgelöst, Testblatt = Prozent; neu Bauzeitgrenze, Kasten 3.1, Nachbartypen, Heft A. Nach Chat „Stufe 2 Prozentrechnung".
 - 2026-09-06 v0.3: nach Durchsprache des Prompts. Originale als Sprossen nach Niveau; ein Lauf ohne Budget; Spezdatei und Serienmodell gestrichen (Katalog hält die Struktur); Check bleibt, voraussetzungen nur Hinweis; Basisheft ohne Hinführung; Test → Probeprüfung mit Freitext-Auswahl; kein Übersichtskasten; Basis-URL auch im Prompt. Stufen 3–6 neu.
+- 2026-09-06 v0.4: nach Auswertung Themenheft 2 und Probeprüfung 2025. Herkunft nur im Protokoll; Kopfzeile, zwei PDFs, Vorablauf auf Zuruf; Originale gleicher Merkmale eine Sprosse; Probeprüfung nie wortgleich; Prompt nur als Projektanweisung. Vorlage 2026-09-06b (blattkopf, kreissektor, leerfeld, drei Reparaturen).
